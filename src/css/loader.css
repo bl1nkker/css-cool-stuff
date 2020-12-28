@@ -1,0 +1,155 @@
+
+
+.loader-circle-1
+{
+   position: absolute;
+   top: calc(50% - 104px);
+    left: calc(50% - 104px);
+   transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    
+    border: 4px transparent solid;
+    border-top: 4px #b858ff solid;
+    border-bottom: 4px #fff958 solid;
+    border-radius: 50%;
+    animation: animate-loader 3s linear infinite;
+}
+
+.loader-circle-1:before
+{
+    content: '';
+
+    /* Positioning inside main circle */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+
+    border: 4px transparent solid;
+    border-top: 4px #e74c3c solid;
+    border-bottom: 4px #3ce7d8 solid;
+    border-radius: 50%;
+
+    animation: animate-loader 2s linear infinite;
+
+}
+
+.loader-circle-1:after
+{
+    content: '';
+
+    /* Positioning inside main circle */
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
+    right: 24px;
+
+    border: 4px transparent solid;
+    border-top: 4px #39ff8d solid;
+    border-bottom: 4px #ff67ad solid;
+    border-radius: 50%;
+
+    animation: animate-loader 1s linear infinite;
+
+}
+
+/* .fade-out{
+    position: absolute;
+    top: calc(50%);
+    left: calc(50%);
+    animation: fading 1s linear 1;
+} */
+
+@keyframes fading{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes animate-loader{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add this for more circles */
+
+/* .loader-circle-2
+{
+   position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% - 94px);
+   transform: translate(-50%,-50%);
+    width: 180px;
+    height: 180px;
+    
+    border: 4px transparent solid;
+    border-top: 4px #e74c3c solid;
+    border-bottom: 4px #3ce7d8 solid;
+    border-radius: 50%;
+    animation: animate-loader 4s linear infinite;
+}
+
+.loader-circle-3
+{
+   position: absolute;
+    top: calc(50% - 84px);
+    left: calc(50% - 84px);
+
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 160px;
+    
+    border: 4px transparent solid;
+    border-top: 4px #39ff8d solid;
+    border-bottom: 4px #ff67ad solid;
+    border-radius: 50%;
+    animation: animate-loader 5s linear infinite;
+}
+
+.loader-circle-4
+{
+   position: absolute;
+    top: calc(50% - 74px);
+    left: calc(50% - 74px);
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 140px;
+    
+    border: 4px transparent solid;
+    border-top: 4px #3946ff solid;
+    border-bottom: 4px #f10c77 solid;
+    border-radius: 50%;
+    animation: animate-loader 2s linear infinite;
+}
+
+.loader-circle-5
+{
+    position: absolute;
+    top: calc(50% - 64px);
+    left: calc(50% - 64px);
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+    
+    border: 4px transparent solid;
+    border-top: 4px #2bff00 solid;
+    border-bottom: 4px #ff9100 solid;
+    border-radius: 50%;
+    animation: animate-loader 3s linear infinite;
+} */
