@@ -7,7 +7,12 @@ export class NavBar extends Component {
         return (
             <nav>
                 <div className='nav-logo'>
-                    Some Logo
+                    <span>b</span>
+                    <span>l</span>
+                    <span>1</span>
+                    <span>n</span>
+                    <span>k</span>
+                    <span>-</span>
                 </div>
                 <div className='nav-buttons'>
                     <Link to='/hearts'>
@@ -18,12 +23,12 @@ export class NavBar extends Component {
                         Hearths
                     </Link>
 
-                    <Link to='/hearts'>
+                    <Link to='/cubes'>
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Next Page
+                        Cubes
                     </Link>
 
                     <Link to='/hearts'>

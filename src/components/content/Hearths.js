@@ -7,7 +7,7 @@ export default class Hearts extends Component {
         return (
             <div className='hearts-container'>
                 <div className='hearts-title'>
-                    <p>Some plain text</p>
+                    <p>Hearts</p>
                 </div>
                 
                 <div className='hearts-items'>
