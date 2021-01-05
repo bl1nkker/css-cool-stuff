@@ -31,12 +31,12 @@ export class NavBar extends Component {
                         Cubes
                     </Link>
 
-                    <Link to='/hearts'>
+                    <Link to='/cards'>
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Next Page
+                        Cards
                     </Link>
                 </div>
             </nav>

@@ -1,0 +1,118 @@
+.cards
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: aliceblue;
+    
+}
+
+.cards-container
+{
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    
+    grid-template-rows: auto;
+    /* In grid-gap there are 2 arguments: gaps on y axis and gaps on x axis*/
+    grid-gap: 0 40px;
+}
+
+.cards-container .cards-box
+{
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* background: violet; */
+}
+
+.cards-container .cards-box:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: rgb(0, 255, 157);
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.cards-container .cards-box:nth-child(1)::before{background: linear-gradient(315deg, #ff0057, #e64a19);}
+.cards-container .cards-box:nth-child(2)::before{background: linear-gradient(115deg, #2f00ff, #19e6e6);}
+.cards-container .cards-box:nth-child(3)::before{background: linear-gradient(315deg, #09ff00, #19e697);}
+.cards-container .cards-box:nth-child(3)::before{background: linear-gradient(315deg, #fffb00, #e69e19);}
+
+.cards-content
+{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.cards-content h2
+{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 7em;
+    color: rgba(53, 206, 193, 0.171);
+    transition: .3s;
+}
+
+.cards-box:hover .cards-content h2
+{
+    top:-90px;
+    color: rgba(255, 255, 0, 0.5);
+}
+
+.cards-content h3
+{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cards-content p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.cards-content a
+{
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    display: inline-block;
+    color: #fff;
+    transition: .5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cards-box:hover .cards-content a
+{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+

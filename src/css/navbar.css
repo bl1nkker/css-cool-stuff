@@ -19,7 +19,7 @@ nav
     height: 10vh;
     width: 100%;
     color: #111;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 300;
 }
 
@@ -55,7 +55,7 @@ nav
     }
     5%, 95% 
     {
-        color: rgba(255, 255, 255, 0.055);
+        color: rgba(80, 77, 35, 0.486);
         filter: blur(0px);
         text-shadow: none
     }
@@ -71,7 +71,7 @@ nav
     width: 100%;
 }
 
-a
+.nav-buttons a
 {
     position: relative;
     display: inline-block;
@@ -111,17 +111,17 @@ a:hover{
         0 0 200px #03e9f4;
 }
 
-a:nth-child(1)
+.nav-buttons a:nth-child(1)
 {
     filter: hue-rotate(290deg);
 }
 
-a:nth-child(2)
+.nav-buttons a:nth-child(2)
 {
     filter: hue-rotate(110deg);
 }
 
-a:nth-child(3)
+.nav-buttons a:nth-child(3)
 {
     filter: hue-rotate(180deg);
 }
